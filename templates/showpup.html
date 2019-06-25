@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/headerforpagetwo.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/registeryourdog.css') }}">
+
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+                <h1 class="logo font-weight-bold">PetPals</h1>
+              <ul class="main-nav">
+                  <li><a href="#">Doggy Box</a></li>
+                  <li><a href="#">Doggy Park</a></li>
+                  <li><a href="#">Sign Out</a></li>
+              </ul>
+    </header> 
+    <main>
+            <div class="loginBox">
+             <h2>Add you're furry friend!</h2>
+             
+            <form>
+             <p>First Name</p>
+                 <input type="text" name="fname" placeholder="Firstname">
+             <p>Last Name</p>
+                 <input type="text" name="lname" placeholder="Lastname">
+             <p>Date Of Birth</p>
+                 <input type="date">
+             <p>E-mail Address</p>
+                 <input type="email" name="email" placeholder="e-mail">
+             <p>Password<p>
+              <input type="Password" name="pword1" placeholder="Create Password">
+             <p>Re-enter Password</p>
+              <input type="password" name="pword2" Placeholder="Confirm Password">
+                 <input type="Submit" name="sbmt">
+            
+            <p>Already have an account? <a href="#">Sign In</a></p>
+            </form>
+            </div>
+           </main>
+    </div>
+    
+</body>
+</html>
